@@ -1,0 +1,118 @@
+@media (min-width: 400px) {
+  #left,
+  #center,
+  #right {
+    flex: 100%;
+  }
+  .img,
+  .bText {
+    flex: 100%;
+  }
+}
+
+
+/* H E A D E R   S E C T I O N */
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background-color: #333;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+#showcase {
+  background: url(../images/building2.jpg);
+  padding: 250px 0px;
+  margin: 10px 0px;
+  filter: opacity(70%);
+  text-shadow: 2px 3px 2px black;
+}
+
+span {
+  font-style: oblique;
+  color: rgb(255, 127, 80);
+}
+h1 {
+  color: #333;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  text-align: center;
+}
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: rgb(180, 180, 180);
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(180, 180, 180);
+  color: rgb(124, 22, 42);
+}
+a.active {
+  background-color: rgb(189, 189, 189);
+  color: rgb(31, 31, 31);
+}
+
+/* B O D Y   S E C T I O N */
+.body {
+  overflow: hidden;
+  background-color: rgb(31, 31, 31);
+  padding: 10px 10px;
+  align-items: center;
+  justify-content: center;
+}
+.img {
+  flex: 50%;
+  float: left;
+  padding: 10px;
+}
+.bText {
+  font-size: 24px;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: rgb(180, 180, 180);
+  line-height: 3.5em;
+}
+/* F L E X   B O X   F E A T U R E S 
+F O O T E R   S E C T I O N*/
+.flexFeatures {
+  display: flex;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+}
+#left {
+  flex: 33%;
+  padding: 10px 20px;
+}
+#center {
+  flex: 33%;
+  padding: 10px 20px;
+}
+#right {
+  flex: 33%;
+  padding: 10px 20px;
+}
+.light {
+  background-color: #e7e7e3;
+}
+
+.dark {
+  background-color: #6a6d72;
+}
+
+/* F O O T E R */
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: rgb(180, 180, 180);
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}

@@ -1,0 +1,136 @@
+/* H E A D    S E C T I O N */
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background-color: #333;
+  overflow: hidden;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: rgb(180, 180, 180);
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: "Courier New", Courier, monospace;
+}
+li a:hover {
+  background-color: rgb(180, 180, 180);
+  color: rgb(124, 22, 42);
+}
+
+/* B O D Y   S E C T I  O N */
+.form {
+  background-color: rgb(31, 31, 31);
+  color: rgb(180, 180, 180);
+  text-align: center;
+  line-height: 40px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  margin: 15px 0px 15px 0px;
+  padding: 15px 0px;
+}
+#name {
+  text-align: center;
+  padding: 7px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  border-radius: 10px;
+}
+#lName {
+  text-align: center;
+  padding: 7px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  border-radius: 10px;
+}
+#userN {
+  text-align: center;
+  padding: 7px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  border-radius: 10px;
+}
+#pass {
+  text-align: center;
+  padding: 7px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  border-radius: 10px;
+}
+#confirmPass {
+  text-align: center;
+  padding: 7px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  border-radius: 10px;
+}
+#email {
+  text-align: center;
+  padding: 7px 20px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+  border-radius: 10px;
+}
+.submit {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  border-radius: 10px;
+  padding: 7px 20px;
+}
+.submit:hover{
+    background-color: rgb(180, 180, 180);
+    color: rgb(124, 22, 42);
+}
+/*    F O R M S   */
+.button {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(180, 180, 180);
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  margin: 10px 0px 15px 0px;
+}
+.signIn { 
+  margin: 0px 50px 20px 0px;
+}
+.signin{
+text-align: center;
+font-size: 25px;
+font-family: 'Courier New', Courier, monospace;
+border-radius: 15px;
+background-color: rgb(31, 31, 31);
+color: rgb(180, 180, 180);
+padding: 7.5px 15px;
+}
+.signin:hover{
+    background-color: rgb(255, 127, 80);
+    color: rgb(124, 22, 42);
+}
+.login{
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    border-radius: 15px;
+    background-color: rgb(31, 31, 31);
+    color: rgb(180, 180, 180);
+    padding: 7.5px 15px;
+}
+.login:hover{
+    background-color: rgb(255, 127, 80);
+    color: rgb(124, 22, 42);
+}
+/* F O O T   S E C T I O N */
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: rgb(180, 180, 180);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 17px;
+}

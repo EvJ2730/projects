@@ -1,0 +1,101 @@
+@media screen and (min-width: 400px) {
+  .wingA,
+  .wingAtext {
+    width: 100%;
+  }
+  .wingB,
+  .wingBtext {
+    width: 100%;
+  }
+  .wingC,
+  .wingCtext {
+    width: 100%;
+  }
+}
+
+/* H E A D   S E C T I O N*/
+.navbar {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  background-color: #333;
+  overflow: hidden;
+  font-family: "Courier New", Courier, monospace;
+}
+li {
+  float: right;
+}
+li a {
+  display: block;
+  color: rgb(180, 180, 180);
+  text-align: center;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color: rgb(180, 180, 180);
+  color: rgb(124, 22, 42);
+}
+
+/* B O D Y   S E C T I O N */
+.flexbox {
+  flex-direction: column;
+}
+.wingA {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(31, 31, 31);
+  padding: 10px 0px;
+}
+.wingAtext {
+  text-align: center;
+  line-height: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(180, 180, 180);
+  font-family: "Courier New", Courier, monospace;
+}
+.wingB {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(180, 180, 180);
+  padding: 10px 0px;
+}
+.wingBtext {
+text-align: center;
+line-height: 30px;
+  flex-direction: row;
+  align-items: center;
+  order: -2;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(31, 31, 31);
+}
+.wingC {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(31, 31, 31);
+  padding: 10px 0px;
+}
+.wingCtext {
+  text-align: center;
+  line-height: 30px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(180, 180, 180);
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* F O O T E R */
+footer {
+  text-align: center;
+  padding: 10px 20px;
+  background-color: #333;
+  color: rgb(180, 180, 180);
+  font-family: "Courier New", Courier, monospace;
+}
