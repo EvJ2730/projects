@@ -1,0 +1,314 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;400;500;600;700&display=swap");
+* {
+  margin: 0px;
+  padding: auto;
+  font-family: "Work Sans", sans-serif;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background-color: #F8F6F3;
+}
+
+/* HEADER AND NAV BAR ====================================================== */
+
+#header {
+  display: flex;
+  flex: 0 2 0;
+  justify-content: space-around;
+  background-color: #3c78a9;
+  width: 100%;
+  height: 120px;
+  color: white;
+  border-bottom: 3px solid #ffc908;
+}
+
+#logo,
+#solarPanelImg {
+  height: 110px;
+  padding-top: 5px;
+}
+
+#logo {
+  padding-left: 5px;
+}
+
+#header > h1 {
+  white-space: nowrap;
+  padding-top: 40px;
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 2px;
+}
+
+#header > h1:hover {
+  text-shadow: 4px 4px 25px #ffc908, -4px -4px 25px #ffc908,
+    2px 2px 25px #ffc908, -2px -2px 25px #ffc908;
+}
+
+#navBar {
+  top: 0;
+  height: 45px;
+  width: 100%;
+  background-color: #3c78a9;
+  /* border-top: 2px solid black;
+  border-bottom: 2px solid black; */
+}
+
+#btnContainer {
+  text-align: right;
+  padding-right: 5px;
+}
+
+.navBtn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-weight: 400;
+  font-size: 26px;
+}
+
+.active {
+  font-weight: 600;
+  text-shadow: 2px 2px 25px #ffc908, -2px -2px 25px #ffc908;
+}
+
+
+/*  HOME AND ABOUT US =================================================================== */
+
+#aboutUsContainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: auto;
+  margin-left: auto;
+  /* width: 85%;
+  height: 700px; */
+  color: black;
+  text-align: center;
+}
+
+
+#aboutUsInfo{
+  width: 90%;
+  margin: auto;
+  font-weight: 400;
+}
+
+#aboutUsImg{
+  width: 50%;
+}
+
+#aboutUsInfo > p {
+  color: black;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+#homeInfo{
+  padding-top: 100px;
+  text-align: center;
+}
+
+#homeInfo > h1 {
+  display: felx;
+  padding-top: 250px;
+  overflow: hidden;
+  color: white;
+  font-weight: 700;
+  font-size: 80px;
+  align-items: center;
+}
+
+#homeContent {
+  position: relative;
+  background-image: url("img/solarPlants.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+#homeInfo{
+  background-color: rgba(0, 0, 0, 0.60);
+  height: 100vh;
+}
+
+
+
+#solarBackground {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  
+  
+}
+
+#logoBackground {
+  position: absolute;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  left: 50%;
+  transform: translate(-50%, 5%);
+}
+
+/* CALCULATOR============================================================ */
+
+#calculatorContainer {
+  display: none;
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 95%;
+  height: 100%;
+  color: black;
+  background-color: #F5F5F5;
+}
+
+#calculatorHeaderContainer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
+
+
+#calculatorHeaderText{
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#calculatorHeaderContainer > img{
+  width: 5%;
+}
+
+#calculatorContainer > h2{
+  color: white;
+  text-align: center;
+  padding-top: 3%;
+  font-weight: 400;
+}
+
+#accordionExample > .accordion-item{
+  background-image: url("img/solarPlants.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#collapseNine  .accordion-item > .accordion-collapse{
+  background-color: transparent;
+  padding-left: 15px;
+}
+
+.accordion-item {
+  /* background-image: url("img/solarPlants.jpg"); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  width: auto;
+  height: 100%;
+  color: white;
+  background-color: transparent;
+}
+
+.accordion-collapse{
+  background-color: rgba(0, 0, 0, 0.60);
+}
+
+#calculateBtn {
+  color: white;
+  background-color: #3c78a9;
+  border: 2px solid black;
+  font-size: 20px;
+  margin: 5px;
+  margin-left: 45%;
+  border-radius: 10px;
+}
+
+#generateBtn{
+  color: white;
+  background-color: #3c78a9;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-size: 15px;
+
+}
+
+
+h4 {
+  font-weight: bold;
+}
+
+#generateYears{
+  display: block;
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  border: 3px solid white;
+  padding: 10px;
+}
+
+.close{
+  border-radius: 5px;
+}
+
+
+
+/* FOOTER ===================================================================== */
+
+
+
+#footer{
+  display: flex;
+  flex-direction: column;
+  min-height: 20%;
+  border-top: 2px solid #ffc908;
+  border-bottom: 2px solid #ffc908;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+  background-color: #3c78a9;
+  text-align: center;
+}
+
+#footer > small{
+  color: white;
+}
+
+#contactUsImg{
+  height: 75%;
+  display: block;
+  margin: auto;
+}
+
+input{
+  border-radius: 10px;
+}
+
+/* RESPONSIVENESS =============================== */
+@media screen and (max-width: 800px) {
+
+}
+
+/* POPUP ========================================== */
+.modal-title{
+  color: #3c78a9;
+}
+.modal-body{
+  color: #ffc908;
+}
+
+.btn-close{
+  background-color: #ffc908;
+  
+}
+
+.btn-secondary{
+  color: #ffc908;
+  background-color: #3c78a9;
+}

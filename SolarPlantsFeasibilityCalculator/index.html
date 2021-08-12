@@ -1,0 +1,1420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar-Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <img src="img/solarDataLogo1.png" alt="Logo" id="logo">
+        <h1> SOLAR PLANTS FEASIBILITY </h1>
+        <img src="img/solarEnergy.png" alt="solarPanel" id="solarPanelImg">
+    </div>
+    <div id="navBar">
+        <div id="btnContainer">
+            <button class="navBtn" id="homeBtn"> HOME </button>
+            <button class="navBtn" id="calculator"> CALCULATOR </button>
+        </div>
+    </div>
+    <div id="homeContent">
+        <div id="homeInfo">
+            <img src="img/solarDataLogo1.png" alt="backgroundLogo" id="logoBackground">
+            <h1>THE SUN IS POWER!</h1>
+        </div>
+    </div>
+    <div id="aboutUsContainer">
+        <img src="img/aboutUs.png" alt="aboutUs" id="aboutUsImg">
+        <div id="aboutUsInfo">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi a ipsam hic
+                laboriosam,
+                consequatur, dolorem odio minima atque distinctio quaerat amet. Eaque, veritatis
+                soluta!
+                Dicta
+                quae
+                eligendi quam, aliquam aliquid sint officiis in quisquam nostrum soluta aut
+                quibusdam
+                voluptatibus!
+                Voluptatibus, ullam dolorem id cumque error blanditiis architecto ratione modi
+                eos quam
+                praesentium,
+                reiciendis quidem ex commodi? Voluptas qui amet veniam aspernatur itaque facilis
+                culpa eos
+                sapiente
+                nulla eum. Explicabo rerum unde quae itaque, nobis eaque dignissimos consequatur
+                id tempore
+                placeat.
+                Autem veniam eveniet blanditiis sit repellendus tempora ea et recusandae laborum
+                ipsa amet
+                voluptate, esse sint perspiciatis aperiam ducimus natus. Lorem ipsum dolor sit,
+                amet
+                consectetur
+                adipisicing elit. Culpa consequatur neque tempora magni.
+                Explicabo rerum unde quae itaque, nobis eaque dignissimos consequatur
+                id tempore placeat.
+                Autem veniam eveniet blanditiis sit repellendus tempora ea et recusandae laborum
+                ipsa amet
+                voluptate, esse sint perspiciatis aperiam ducimus natus. Lorem ipsum dolor sit,
+                amet
+                consectetur
+                adipisicing elit. Culpa consequatur neque tempora magni.
+            </p>
+        </div>
+    </div>
+    <div id="calculatorContainer">
+        <div id="calculatorHeaderContainer">
+            <img src="img/calculatorImg.png" alt="">
+            <h1 id="calculatorHeaderText">CALCULATOR</h1>
+            <img src="img/solarPanel.png" alt="">
+        </div>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        System Costs
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="installedCost">Total Installed Cost ($)</label>
+                                <input type="number" name="installedCost" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h4>Operation and Maintenance (O&M)</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="AnnualOM">Fixed (Annual) O&M ($/yr)</label>
+                                <input type="number" name="AnnualOM" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="EscRate1">Escalation Rate (%/yr)</label>
+                                <input type="number" name="EscRate1" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="FixedOM">Fixed O&M ($/kW-yr)</label>
+                                <input type="number" name="FixedOM" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="EscRate2">Escalation Rate (%/yr)</label>
+                                <input type="number" name="EscRate2" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="VariableOM">Variable O&M ($/MWh)</label>
+                                <input type="number" name="VariableOM" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="EscRate3">Escalation Rate (%/yr)</label>
+                                <input type="number" name="EscRate3" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="batteryReplacements">Bettery Replacements</label>
+                                <input type="number" name="batteryReplacements" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <h4>Fuel</h4>
+                        <h5>CSP, generic system</h5>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="AnnualFuelUsage">Annual Fuel Usage (kWh)</label>
+                                <input type="number" name="AnnualFuelUsage" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="heatRate">Heat rate, generic only (MMBTU/MWh)</label>
+                                <input type="number" name="heatRate" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="fuelCost">Fuel cost ($/MMBtu)</label>
+                                <input type="number" name="fuelCost" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="EscRate4">Escalation Rate (%/year)</label>
+                                <input type="number" name="EscRate4" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <h5>Biomass power</h5>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="biomassUsage">Annual biomass feedstock usage (dry ton)</label>
+                                <input type="number" name="biomassUsage" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="biomassCost">Biomass feedstock cost ($/dry ton)</label>
+                                <input type="number" name="biomassCost" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="biomassEscRate">Escalation Rate (%/year)</label>
+                                <input type="number" name="biomassEscRate" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="coalUsage">Coal feedstock usage (dry ton)</label>
+                                <input type="number" name="coalUsage" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="coalCost">Coal feedstock cost ($/dry ton)</label>
+                                <input type="number" name="coalCost" id="">
+                            </div>
+                            <div class="col-sm-3">
+                                <label for="coalEscRate">Escalation Rate (%/year)</label>
+                                <input type="number" name="coalEscRate" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        Loan Parameters
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="debtFraction">Debt Fraction (% of total installed cost)</label>
+                                <input type="number" name="debtFraction" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="loanTerm">Loan Term (years)</label>
+                                <input type="number" name="loanTerm" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-5">
+                                <label for="loanRate">Loan Rate (%/year)</label>
+                                <input type="number" name="loanRate" id="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        Analysis Parameters
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="analysisPeriod">Analysis Period (years)</label>
+                                <input type="number" name="analysisPeriod" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="inflationRate">Inflation Rate (%/year)</label>
+                                <input type="number" name="inflationRate" id="">
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="realDiscRate">Real Discount Rate (%/year)</label>
+                                <input type="number" name="realDiscRate id="">   
+                                </div>
+                            </div>
+                            <br>
+                            <div class=" row">
+                                <div class="col-sm-3">
+                                    <label for="nominalDiscRate">Nominal Discount Rate (%/year)</label>
+                                    <input type="number" name="nominalDiscRate" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Tax and Insurance Rates
+                        </button>
+                    </h2>
+                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="federalTaxRate">Federal income tax rate in Year 1 (%)</label>
+                                    <input type="number" name="federalTaxRate" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="stateTaxRate">State income tax rate in Year 1 (%)</label>
+                                    <input type="number" name="stateTaxRate" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="salesTax">Sales tax (% of direct costs)</label>
+                                    <input type="number" name="salesTax" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="insuranceRate">Insurance rate (%/year)</label>
+                                    <input type="number" name="insuranceRate" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <h5>Property Tax (%/year)</h5>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <label for="assessedPercentage">Assessed percentage (% of total installed
+                                        cost)</label>
+                                    <input type="number" name="assessedPercentage" id="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="assessedValue">Assessed value ($)</label>
+                                    <input type="number" name="assessedValue" id="">
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="annualDecline">Annual decline (%/year)</label>
+                                    <input type="number" name="annualDecline" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="propertyTax">Property tax rate (% of assessed value)</label>
+                                    <input type="number" name="propertyTax" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Salvage Value
+                        </button>
+                    </h2>
+                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <label for="netSalvageValue">Net Salvage Value (% of total installed
+                                        cost)</label>
+                                    <input type="number" name="netSalvageValue" id="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                            Tax Credits
+                        </button>
+                    </h2>
+                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4>Investment Tax Credit</h4>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4>Reduces depreciation and ITC basis</h>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h5> As fixed amount</h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6>Federal ($)</h6>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="fAmmount">Ammount</label>
+                                    <input type="number" name="fAmmount" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="federal1">Federal</label>
+                                    <br>
+                                    <label for="federal1">Yes</label>
+                                    <input type="radio" name="federal1" id="">
+                                    <label for="federal1">No </label>
+                                    <input type="radio" name="federal1" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="state1">State</label>
+                                    <br>
+                                    <label for="state1">Yes</label>
+                                    <input type="radio" name="state1" id="">
+                                    <label for="state1">No </label>
+                                    <input type="radio" name="state1" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-3">
+                                    <h6>State ($)</h6>
+                                </div>
+                                <div class="col-sm-4">
+                                    <label for="sAmmount">Ammount</label>
+                                    <input type="number" name="sAmmount" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="federal2">Federal</label>
+                                    <br>
+                                    <label for="federal2">Yes</label>
+                                    <input type="radio" name="federal2" id="">
+                                    <label for="federal2">No </label>
+                                    <input type="radio" name="federal2" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="state2">State</label>
+                                    <br>
+                                    <label for="state2">Yes</label>
+                                    <input type="radio" name="state2" id="">
+                                    <label for="state2">No </label>
+                                    <input type="radio" name="state2" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <h5> As percentage </h5>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <h6> Federal </h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="fPerc">%</label>
+                                    <input type="number" name="fPerc" id="">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="fMax">Maximum</label>
+                                    <input type="number" name="fMax" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="federal3">Federal</label>
+                                    <br>
+                                    <label for="federal3">Yes</label>
+                                    <input type="radio" name="federal3" id="">
+                                    <label for="federal3">No </label>
+                                    <input type="radio" name="federal3" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="state3">State</label>
+                                    <br>
+                                    <label for="state3">Yes</label>
+                                    <input type="radio" name="state3" id="">
+                                    <label for="state3">No </label>
+                                    <input type="radio" name="state3" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-sm-2">
+                                    <h6> State </h6>
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="sPerc">%</label>
+                                    <input type="number" name="sPerc" id="">
+                                </div>
+                                <div class="col-sm-3">
+                                    <label for="sMax">Maximum</label>
+                                    <input type="number" name="sMax" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="federal4">Federal</label>
+                                    <br>
+                                    <label for="federal4">Yes</label>
+                                    <input type="radio" name="federal4" id="">
+                                    <label for="federal4">No </label>
+                                    <input type="radio" name="federal4" id="">
+                                </div>
+                                <div class="col-sm-2">
+                                    <label for="state4">State</label>
+                                    <br>
+                                    <label for="state4">Yes</label>
+                                    <input type="radio" name="state4" id="">
+                                    <label for="state4">No </label>
+                                    <input type="radio" name="state4" id="">
+                                </div>
+                            </div>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h4>Preduction tax credit (PTC)</h4>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h6>Federal ($/kWh)</h6>
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="federalAmmount">Ammount ($/kWh)</label>
+                                    <input type="number" name="federalAmmount" id="">
+                                </div>
+                                <div class="col-md-3">
+                                    <label for="federalTerm">Term ($/Years)</label>
+                                    <input type="number" name="federalTerm id="">
+                                    </div>
+                                    <div class=" col-md-3">
+                                    <label for="federalEscalation">Escalation (%)</label>
+                                    <input type="number" name="federalEscalation id="">
+                                    </div>
+                                </div>
+                                <br>
+                                <div class=" row">
+                                    <div class="col-md-3">
+                                        <h6>State ($/kWh)</h6>
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="stateAmmount">Ammount ($/kWh)</label>
+                                        <input type="number" name="stateAmmount" id="">
+                                    </div>
+                                    <div class="col-md-3">
+                                        <label for="stateTerm">Term ($/Years)</label>
+                                        <input type="number" name="stateTerm id="">
+                                    </div>
+                                    <div class=" col-md-3">
+                                        <label for="stateEscalation">Escalation (%)</label>
+                                        <input type="number" name="stateEscalation id="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class=" accordion-item">
+                                        <h2 class="accordion-header" id="headingSeven">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseSeven"
+                                                aria-expanded="false" aria-controls="collapseSeven">
+                                                Direct Tax Incentives
+                                            </button>
+                                        </h2>
+                                        <div id="collapseSeven" class="accordion-collapse collapse"
+                                            aria-labelledby="headingSeven" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h4>
+                                                            Investment based incentive (IBI)
+                                                        </h4>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <h5> Incentive is taxable </h5>
+                                                    </div>
+                                                    <div class="col-sm-3">
+                                                        <h5> Reduces depreciation and ITC basis</h5>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-3">
+                                                        <h5>As fixed ammount</h5>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Federal ($)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="federalAmm1">Ammount ($)</label>
+                                                        <input type="number" name="federalAmm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2"></div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal5">Federal</label>
+                                                        <br>
+                                                        <label for="federal5">Yes</label>
+                                                        <input type="radio" name="federal5" id="">
+                                                        <label for="federal5">No </label>
+                                                        <input type="radio" name="federal5" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state5">State</label>
+                                                        <br>
+                                                        <label for="state5">Yes</label>
+                                                        <input type="radio" name="state5" id="">
+                                                        <label for="state5">No </label>
+                                                        <input type="radio" name="state5" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal6">Federal</label>
+                                                        <br>
+                                                        <label for="federal6">Yes</label>
+                                                        <input type="radio" name="federal6" id="">
+                                                        <label for="federal6">No </label>
+                                                        <input type="radio" name="federal6" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state6">State</label>
+                                                        <br>
+                                                        <label for="state6">Yes</label>
+                                                        <input type="radio" name="state6" id="">
+                                                        <label for="state6">No </label>
+                                                        <input type="radio" name="state6" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>State ($)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="stateAmm1">Ammount ($)</label>
+                                                        <input type="number" name="stateAmm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2"></div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal7">Federal</label>
+                                                        <br>
+                                                        <label for="federal7">Yes</label>
+                                                        <input type="radio" name="federal7" id="">
+                                                        <label for="federal7">No </label>
+                                                        <input type="radio" name="federal7" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state7">State</label>
+                                                        <br>
+                                                        <label for="state7">Yes</label>
+                                                        <input type="radio" name="state7" id="">
+                                                        <label for="state7">No </label>
+                                                        <input type="radio" name="state7" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal8">Federal</label>
+                                                        <br>
+                                                        <label for="federal8">Yes</label>
+                                                        <input type="radio" name="federal8" id="">
+                                                        <label for="federal8">No </label>
+                                                        <input type="radio" name="federal8" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state8">State</label>
+                                                        <br>
+                                                        <label for="state8">Yes</label>
+                                                        <input type="radio" name="state8" id="">
+                                                        <label for="state8">No </label>
+                                                        <input type="radio" name="state8" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Utility ($)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="utilityAmm1">Ammount ($)</label>
+                                                        <input type="number" name="utilityAmm1 id="">
+                            </div>
+                            <div class=" col-sm-2">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal9">Federal</label>
+                                                        <br>
+                                                        <label for="federal9">Yes</label>
+                                                        <input type="radio" name="federal9" id="">
+                                                        <label for="federal9">No </label>
+                                                        <input type="radio" name="federal9" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state9">State</label>
+                                                        <br>
+                                                        <label for="state9">Yes</label>
+                                                        <input type="radio" name="state9" id="">
+                                                        <label for="state9">No </label>
+                                                        <input type="radio" name="state9" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal10">Federal</label>
+                                                        <br>
+                                                        <label for="federal10">Yes</label>
+                                                        <input type="radio" name="federal10" id="">
+                                                        <label for="federal10">No </label>
+                                                        <input type="radio" name="federal10" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state10">State</label>
+                                                        <br>
+                                                        <label for="state10">Yes</label>
+                                                        <input type="radio" name="state10" id="">
+                                                        <label for="state10">No </label>
+                                                        <input type="radio" name="state10" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Other ($)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="otherAmm1">Ammount ($)</label>
+                                                        <input type="number" name="otherAmm1 id="">
+                            </div>
+                            <div class=" col-sm-2">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal11">Federal</label>
+                                                        <br>
+                                                        <label for="federal11">Yes</label>
+                                                        <input type="radio" name="federal11" id="">
+                                                        <label for="federal11">No </label>
+                                                        <input type="radio" name="federal11" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state11">State</label>
+                                                        <br>
+                                                        <label for="state11">Yes</label>
+                                                        <input type="radio" name="state11" id="">
+                                                        <label for="state11">No </label>
+                                                        <input type="radio" name="state11" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal12">Federal</label>
+                                                        <br>
+                                                        <label for="federal12">Yes</label>
+                                                        <input type="radio" name="federal12" id="">
+                                                        <label for="federal12">No </label>
+                                                        <input type="radio" name="federal12" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state12">State</label>
+                                                        <br>
+                                                        <label for="state12">Yes</label>
+                                                        <input type="radio" name="state12" id="">
+                                                        <label for="state12">No </label>
+                                                        <input type="radio" name="state12" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h5>As percentage</h5>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Federal (% of total installed cost)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="percentage1">%</label>
+                                                        <br>
+                                                        <input type="number" name="percentage1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal13">Federal</label>
+                                                        <br>
+                                                        <label for="federal13">Yes</label>
+                                                        <input type="radio" name="federal13" id="">
+                                                        <label for="federal13">No </label>
+                                                        <input type="radio" name="federal13" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state13">State</label>
+                                                        <br>
+                                                        <label for="state13">Yes</label>
+                                                        <input type="radio" name="state13" id="">
+                                                        <label for="state13">No </label>
+                                                        <input type="radio" name="state13" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal14">Federal</label>
+                                                        <br>
+                                                        <label for="federal14">Yes</label>
+                                                        <input type="radio" name="federal14" id="">
+                                                        <label for="federal14">No </label>
+                                                        <input type="radio" name="federal14" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state14">State</label>
+                                                        <br>
+                                                        <label for="state14">Yes</label>
+                                                        <input type="radio" name="state14" id="">
+                                                        <label for="state14">No </label>
+                                                        <input type="radio" name="state14" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>State (% of total installed cost)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="percentage2">%</label>
+                                                        <br>
+                                                        <input type="number" name="percentage2" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm1">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal14">Federal</label>
+                                                        <br>
+                                                        <label for="federal14">Yes</label>
+                                                        <input type="radio" name="federal14" id="">
+                                                        <label for="federal14">No </label>
+                                                        <input type="radio" name="federal14" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state14">State</label>
+                                                        <br>
+                                                        <label for="state14">Yes</label>
+                                                        <input type="radio" name="state14" id="">
+                                                        <label for="state14">No </label>
+                                                        <input type="radio" name="state14" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal15">Federal</label>
+                                                        <br>
+                                                        <label for="federal15">Yes</label>
+                                                        <input type="radio" name="federal15" id="">
+                                                        <label for="federal15">No </label>
+                                                        <input type="radio" name="federal15" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state15">State</label>
+                                                        <br>
+                                                        <label for="state15">Yes</label>
+                                                        <input type="radio" name="state15" id="">
+                                                        <label for="state15">No </label>
+                                                        <input type="radio" name="state15" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Utility (% of total installed cost)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="percentage3">%</label>
+                                                        <br>
+                                                        <input type="number" name="percentage3" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm2">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm2" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal15">Federal</label>
+                                                        <br>
+                                                        <label for="federal15">Yes</label>
+                                                        <input type="radio" name="federal15" id="">
+                                                        <label for="federal15">No </label>
+                                                        <input type="radio" name="federal15" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state15">State</label>
+                                                        <br>
+                                                        <label for="state15">Yes</label>
+                                                        <input type="radio" name="state15" id="">
+                                                        <label for="state15">No </label>
+                                                        <input type="radio" name="state15" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal16">Federal</label>
+                                                        <br>
+                                                        <label for="federal16">Yes</label>
+                                                        <input type="radio" name="federal16" id="">
+                                                        <label for="federal16">No </label>
+                                                        <input type="radio" name="federal16" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state16">State</label>
+                                                        <br>
+                                                        <label for="state16">Yes</label>
+                                                        <input type="radio" name="state16" id="">
+                                                        <label for="state16">No </label>
+                                                        <input type="radio" name="state16" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Other (% of total installed cost)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="percentage3">%</label>
+                                                        <br>
+                                                        <input type="number" name="percentage3" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm3">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm3" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal17">Federal</label>
+                                                        <br>
+                                                        <label for="federal17">Yes</label>
+                                                        <input type="radio" name="federal17" id="">
+                                                        <label for="federal17">No </label>
+                                                        <input type="radio" name="federal17" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state17">State</label>
+                                                        <br>
+                                                        <label for="state17">Yes</label>
+                                                        <input type="radio" name="state17" id="">
+                                                        <label for="state17">No </label>
+                                                        <input type="radio" name="state17" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal18">Federal</label>
+                                                        <br>
+                                                        <label for="federal18">Yes</label>
+                                                        <input type="radio" name="federal18" id="">
+                                                        <label for="federal18">No </label>
+                                                        <input type="radio" name="federal18" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state18">State</label>
+                                                        <br>
+                                                        <label for="state18">Yes</label>
+                                                        <input type="radio" name="state18" id="">
+                                                        <label for="state18">No </label>
+                                                        <input type="radio" name="state18" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h4>Capacity based incentive (CBI)</h4>
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Federal ($/W)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="fAmm1">Ammount ($/W)</label>
+                                                        <br>
+                                                        <input type="number" name="fAmm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm4">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm4" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal19">Federal</label>
+                                                        <br>
+                                                        <label for="federal19">Yes</label>
+                                                        <input type="radio" name="federal19" id="">
+                                                        <label for="federal19">No </label>
+                                                        <input type="radio" name="federal19" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state19">State</label>
+                                                        <br>
+                                                        <label for="state19">Yes</label>
+                                                        <input type="radio" name="state19" id="">
+                                                        <label for="state19">No </label>
+                                                        <input type="radio" name="state19" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal20">Federal</label>
+                                                        <br>
+                                                        <label for="federal20">Yes</label>
+                                                        <input type="radio" name="federal20" id="">
+                                                        <label for="federal20">No </label>
+                                                        <input type="radio" name="federal20" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state20">State</label>
+                                                        <br>
+                                                        <label for="state20">Yes</label>
+                                                        <input type="radio" name="state20" id="">
+                                                        <label for="state20">No </label>
+                                                        <input type="radio" name="state20" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>State ($/W)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="sAmm1">Ammount ($/W)</label>
+                                                        <br>
+                                                        <input type="number" name="sAmm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm5">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm5" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal21">Federal</label>
+                                                        <br>
+                                                        <label for="federal21">Yes</label>
+                                                        <input type="radio" name="federal21" id="">
+                                                        <label for="federal21">No </label>
+                                                        <input type="radio" name="federal21" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state21">State</label>
+                                                        <br>
+                                                        <label for="state21">Yes</label>
+                                                        <input type="radio" name="state21" id="">
+                                                        <label for="state21">No </label>
+                                                        <input type="radio" name="state21" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal22">Federal</label>
+                                                        <br>
+                                                        <label for="federal22">Yes</label>
+                                                        <input type="radio" name="federal22" id="">
+                                                        <label for="federal22">No </label>
+                                                        <input type="radio" name="federal22" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state22">State</label>
+                                                        <br>
+                                                        <label for="state22">Yes</label>
+                                                        <input type="radio" name="state22" id="">
+                                                        <label for="state22">No </label>
+                                                        <input type="radio" name="state22" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Utility ($/W)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="uAmm1">Ammount ($/W)</label>
+                                                        <br>
+                                                        <input type="number" name="uAmm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm6">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm6" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal23">Federal</label>
+                                                        <br>
+                                                        <label for="federal23">Yes</label>
+                                                        <input type="radio" name="federal23" id="">
+                                                        <label for="federal23">No </label>
+                                                        <input type="radio" name="federal23" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state23">State</label>
+                                                        <br>
+                                                        <label for="state23">Yes</label>
+                                                        <input type="radio" name="state23" id="">
+                                                        <label for="state23">No </label>
+                                                        <input type="radio" name="state23" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal24">Federal</label>
+                                                        <br>
+                                                        <label for="federal24">Yes</label>
+                                                        <input type="radio" name="federal24" id="">
+                                                        <label for="federal24">No </label>
+                                                        <input type="radio" name="federal24" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state24">State</label>
+                                                        <br>
+                                                        <label for="state24">Yes</label>
+                                                        <input type="radio" name="state24" id="">
+                                                        <label for="state24">No </label>
+                                                        <input type="radio" name="state24" id="">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Other ($/W)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="oAmm1">Ammount ($/W)</label>
+                                                        <br>
+                                                        <input type="number" name="oAmm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="maxAmm7">Maximum ($)</label>
+                                                        <br>
+                                                        <input type="number" name="maxAmm7" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal25">Federal</label>
+                                                        <br>
+                                                        <label for="federal25">Yes</label>
+                                                        <input type="radio" name="federal25" id="">
+                                                        <label for="federal25">No </label>
+                                                        <input type="radio" name="federal25" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="state25">State</label>
+                                                        <br>
+                                                        <label for="state25">Yes</label>
+                                                        <input type="radio" name="state25" id="">
+                                                        <label for="state25">No </label>
+                                                        <input type="radio" name="state25" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="federal26">Federal</label>
+                                                        <br>
+                                                        <label for="federal26">Yes</label>
+                                                        <input type="radio" name="federal26" id="">
+                                                        <label for="federal26">No </label>
+                                                        <input type="radio" name="federal26" id="">
+                                                    </div>
+                                                    <div class="col-sm-1">
+                                                        <label for="state26">State</label>
+                                                        <br>
+                                                        <label for="state26">Yes</label>
+                                                        <input type="radio" name="state26" id="">
+                                                        <label for="state26">No </label>
+                                                        <input type="radio" name="state26" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <h4>Production based incentive (PBI)</h4>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Federal ($/kWh)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="fAmm2">Ammount ($/kWh)</label>
+                                                        <br>
+                                                        <input type="number" name="fAmm2" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="fTerm1">Term (years)</label>
+                                                        <br>
+                                                        <input type="number" name="fTerm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="escRate5">Escalation (%/year)</label>
+                                                        <br>
+                                                        <input type="number" name="escRate5" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="fTaxable">Federal taxable</label>
+                                                        <br>
+                                                        <label for="fTaxable">Yes</label>
+                                                        <input type="radio" name="fTaxable" id="">
+                                                        <label for="fTaxable">No </label>
+                                                        <input type="radio" name="fTaxable" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="stateTaxable">State taxable</label>
+                                                        <br>
+                                                        <label for="stateTaxable">Yes</label>
+                                                        <input type="radio" name="stateTaxable" id="">
+                                                        <label for="stateTaxable">No </label>
+                                                        <input type="radio" name="stateTaxable" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>State ($/kWh)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="sAmm2">Ammount ($/kWh)</label>
+                                                        <br>
+                                                        <input type="number" name="sAmm2" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="sTerm1">Term (years)</label>
+                                                        <br>
+                                                        <input type="number" name="sTerm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="escRate6">Escalation (%/year)</label>
+                                                        <br>
+                                                        <input type="number" name="escRate6" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="fTaxable1">Federal taxable</label>
+                                                        <br>
+                                                        <label for="fTaxable1">Yes</label>
+                                                        <input type="radio" name="fTaxable1" id="">
+                                                        <label for="fTaxable1">No </label>
+                                                        <input type="radio" name="fTaxable1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="stateTaxable1">State taxable</label>
+                                                        <br>
+                                                        <label for="stateTaxable1">Yes</label>
+                                                        <input type="radio" name="stateTaxable1" id="">
+                                                        <label for="stateTaxable1">No </label>
+                                                        <input type="radio" name="stateTaxable1" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Utility ($/kWh)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="uAmm2">Ammount ($/kWh)</label>
+                                                        <br>
+                                                        <input type="number" name="uAmm2" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="uTerm1">Term (years)</label>
+                                                        <br>
+                                                        <input type="number" name="uTerm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="escRate7">Escalation (%/year)</label>
+                                                        <br>
+                                                        <input type="number" name="escRate7" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="fTaxable2">Federal taxable</label>
+                                                        <br>
+                                                        <label for="fTaxable2">Yes</label>
+                                                        <input type="radio" name="fTaxable2" id="">
+                                                        <label for="fTaxable2">No </label>
+                                                        <input type="radio" name="fTaxable2" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="stateTaxable2">State taxable</label>
+                                                        <br>
+                                                        <label for="stateTaxable2">Yes</label>
+                                                        <input type="radio" name="stateTaxable2" id="">
+                                                        <label for="stateTaxable2">No </label>
+                                                        <input type="radio" name="stateTaxable2" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-sm-2">
+                                                        <h6>Other ($/kWh)</h6>
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="oAmm2">Ammount ($/kWh)</label>
+                                                        <br>
+                                                        <input type="number" name="oAmm2" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="oTerm1">Term (years)</label>
+                                                        <br>
+                                                        <input type="number" name="oTerm1" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="escRate8">Escalation (%/year)</label>
+                                                        <br>
+                                                        <input type="number" name="escRate8" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="fTaxable3">Federal taxable</label>
+                                                        <br>
+                                                        <label for="fTaxable3">Yes</label>
+                                                        <input type="radio" name="fTaxable3" id="">
+                                                        <label for="fTaxable3">No </label>
+                                                        <input type="radio" name="fTaxable3" id="">
+                                                    </div>
+                                                    <div class="col-sm-2">
+                                                        <label for="stateTaxable3">State taxable</label>
+                                                        <br>
+                                                        <label for="stateTaxable3">Yes</label>
+                                                        <input type="radio" name="stateTaxable3" id="">
+                                                        <label for="stateTaxable3">No </label>
+                                                        <input type="radio" name="stateTaxable3" id="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingEight">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseEight"
+                                                aria-expanded="false" aria-controls="collapseEight">
+                                                Depreciation and Dept Interest Deduction
+                                            </button>
+                                        </h2>
+                                        <div id="collapseEight" class="accordion-collapse collapse"
+                                            aria-labelledby="headingEight" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label for="depreciationFederal">Federal (N/A for
+                                                            residental)</label>
+                                                        <input type="number" name="depreciationFederal" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <label for="depreciationState">State (N/A for
+                                                            residental)</label>
+                                                        <input type="number" name="depreciationState" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                                <div class="row">
+                                                    <div class="col-md-7">
+                                                        <label for="taxDeductable">Tax deductable debt
+                                                            interest?</label>
+                                                        <br>
+                                                        <label for="taxDeductable">Yes</label>
+                                                        <input type="radio" name="taxDeductable" id="">
+                                                        <label for="taxDeductable">No </label>
+                                                        <input type="radio" name="taxDeductable" id="">
+                                                    </div>
+                                                </div>
+                                                <br>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingNine">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseNine"
+                                                aria-expanded="false" aria-controls="collapseNine">
+                                                Annual Values
+                                            </button>
+                                        </h2>
+                                        <div id="collapseNine" class="accordion-collapse collapse"
+                                            aria-labelledby="headingNine" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body" id="annualValues">
+                                                <div id="annualVelueInputs">
+
+
+                                                </div>
+                                                <div id="generateYears">
+                                                    <label for="yearsForAnnualValues">Insert the ammount of years to
+                                                        generate inputs</label>
+                                                    <br>
+                                                    <input type="number" name="yearsForAnnualValues"
+                                                        id="yearsForAnnualValues">
+                                                    <br>
+                                                    <br>
+                                                    <button id="generateBtn">Generate</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="container">
+                                        <button type="button" id="calculateBtn" data-bs-toggle="modal"
+                                            data-bs-target=".modal">Calculate</button>
+                                        <div class="modal" tabindex="-1">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content">
+                                                    <div class="modal-header">
+                                                        <h5 class="modal-title">RESULT</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <p>COMMING SOON...</p>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="modal" tabindex="-1" role="dialog">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title">Results</h5>
+                                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                  </button>
+                                </div>
+                                <div class="modal-body">
+                                  <p>Soon...</p>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-secondary btnClose" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        <div id="footer">
+                            <img src="img/contactUs.png" alt="contactUsImg" id="contactUsImg">
+                            <small>&#169; 2021 cp04-sda. All Rights Reserved. </small>
+                        </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+<script src="script.js"></script>
+
+</html>
